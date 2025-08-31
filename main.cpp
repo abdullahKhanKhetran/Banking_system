@@ -14,8 +14,9 @@ public:
     void createAccount() {
         cout << "\nEnter Account No. : ";
         cin >> accNo;
+         cin.ignore();
         cout << "Enter Name : ";
-        cin.ignore();
+       
         cin.getline(name, 50);
         cout << "Enter Type (C/S) : ";
         cin >> type;
